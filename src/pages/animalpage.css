@@ -1,0 +1,9 @@
+.animals{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(231, 221, 198);
+    /* background-color: red; */
+    overflow: auto;
+    margin-bottom: 10px;
+  }
