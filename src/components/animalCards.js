@@ -14,11 +14,15 @@ const AnimalCards=({type,imageSrc,emri,origjina,setPopupAnimal,handleShow,animal
             <div className="animalPhoto">
                 <img width="100%" height="150px" src={imageSrc}></img>
             </div>
-            <p>Name : {emri}</p>
+            <p><b>Name : </b>{emri}</p>
             {type!="birds" &&(
-            <p>Origin : {origjina}</p>
+            <p><b>Origin : </b>{origjina}</p>
         )}
+        {type=="birds" &&(
+        <p><b>Place of found : </b>{animal.place_of_found ? animal.place_of_found:""}</p>
+    )}
         </div>
+
     )
 }
 

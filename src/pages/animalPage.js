@@ -21,6 +21,7 @@ const AnimalList=()=>{
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    
 
     const fetchAnimals = async () => {
         try {
@@ -34,7 +35,7 @@ const AnimalList=()=>{
 
       const fetchAnimalsBySearch = async () => {
         try {
-          const response = await axios.get(`https://freetestapi.com/api/v1/dogs?search=${animalsSearch}`);
+          const response = await axios.get(`https://freetestapi.com/api/v1/${type}?search=${animalsSearch}`);
           setAnimals(response.data);
         //   console.log("animals",response.data);
         } catch (error) {
@@ -73,7 +74,7 @@ const AnimalList=()=>{
                     )
                 })}
             </div>
-            <AnimalPopUp show={show} handleShow={handleShow} handleClose={handleClose} animal={popupAnimal} />
+            <AnimalPopUp type={type} show={show} handleShow={handleShow} handleClose={handleClose} animal={popupAnimal} />
         </div>
     )
 }

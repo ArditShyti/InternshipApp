@@ -10,9 +10,11 @@ const AboutUs=()=>{
     return(
         <div className="about">
             <div className="headcnt">
+            <div data-intro="This is a button. Click here to perform an action.">
                 <div class="heading">
                     <h1>About the Animals Catalog</h1>
                     <p>Welcome to Animals Catalog, your premier destination for discovering and learning about the fascinating world of animals. Whether you are a passionate animal lover, a student seeking information, or simply curious about the diversity of wildlife, our extensive catalog offers a wealth of knowledge and captivating details. </p>
+                </div>
                 </div>
             </div>
 
@@ -132,6 +134,7 @@ Welcome to the world of Animals Catalog – where every animal has a story.</p>
 </div>
 
 </div>
+  
 </div>
     )
 }

@@ -15,8 +15,8 @@ const ContactUs=()=>{
             <section class="contact-form">
                 <div class="contactForm">
                     <form className="forma" action="#">
-                        <h1 class="heading">Contact Us</h1> 
-                        <p class="para">Get in touch with the TechForward 2024 team for any inquiries.</p>
+                        <h1 class="contact_heading">Contact Us</h1> 
+                        <p class="para">Get in touch with the team for any inquiries.</p>
                         <h1 class="sub-heading"> Contact Information</h1>
                         <div class="method">
                             <p class="para2">Email: info@techforward2024.com</p>
